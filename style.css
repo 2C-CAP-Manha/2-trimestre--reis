@@ -36,7 +36,7 @@ footer p {
 
 .cartao_conteudo{
     text-align: center;
-    background-color:rgba(41, 107, 85, 0.856)
+    background-color:rgba(41, 107, 85, 0.856);
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
@@ -60,4 +60,21 @@ footer p {
 
 .cartao-conteudo-pergunta, .cartao-conteudo_resposta{
     backface-visibility: hidden;
+}
+
+.cartao_conteudo_resposta {
+ transform: rotateY('180deg');
+}
+
+.cartao_conteudo_pergunta, .cartao_conteudo_resposta {
+  backface-visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.cartao__conteudo p {
+    margin-top: 1rem;
+    padding: 2rem;
+    margin-top: 4rem;
 }
